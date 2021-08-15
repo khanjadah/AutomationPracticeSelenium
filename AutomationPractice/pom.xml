@@ -4,7 +4,8 @@
   <artifactId>AutomationPractice</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <packaging>jar</packaging>
+
+<packaging>jar</packaging>
 
 <name>MavenProject</name>
 <url>http://maven.apache.org</url>
@@ -79,6 +80,22 @@
 <source>7</source>
 <target>7</target>
 </configuration>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-help-plugin</artifactId>
+<version>2.1.1</version>
+<executions>
+<execution>
+<phase>generate-resources</phase>
+<goals>
+<goal>effective-pom</goal>
+</goals>
+<configuration>
+<output>${project.build.outputDirectory}/META-INF/maven/${project.groupId}/${project.artifactId}/effective-pom.xml</output>
+</configuration>
+</execution>
+</executions>
 </plugin>
 <plugin>
 <groupId>org.apache.maven.plugins</groupId>
