@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite2">
+<parameter name="user" value= "Rony" />
+<parameter name="search" value= "Bangladesh" />
+
+  <test  name="TestParameter">
+  
+  <groups>
+        <run>
+            <include name="a" />
+            
+        </run>
+    </groups>
+  
+  <!-- <parameter name="user" value= "Sumit" />
+  <parameter name="search" value= "Madaripur" /> -->
+    <classes>
+      <class name="testMethod.DataProviderNoClass"/>
+      <!-- <class name="testMethod.DataProviderClass"/> -->
+      
+    </classes>
+    
+    
+  </test> <!-- TestParameter -->
+  <test  name="TestParameter1">
+  <groups>
+        <run>
+            <include name="b" />
+            
+            
+        </run>
+    </groups>
+  
+  <!-- <parameter name="user" value= "Sumit" />
+  <parameter name="search" value= "Madaripur" /> -->
+    <classes>
+      <class name="testMethod.DataProviderNoClass"/>
+      <!-- <class name="testMethod.DataProviderClass"/> -->
+      
+    </classes>
+    </test>
+</suite> <!-- Suite2 -->

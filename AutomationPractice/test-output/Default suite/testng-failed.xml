@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testSignUpPage.SignuppageTest">
+      <class name="testMethod.DataProviderNoClass">
         <methods>
-          <include name="quit"/>
+          <include name="browsersetup"/>
+          <include name="dataProvider3"/>
           <include name="setup"/>
-          <include name="SignUPpage_Appear"/>
+          <include name="dataProvider2"/>
+          <include name="endoftest"/>
         </methods>
-      </class> <!-- testSignUpPage.SignuppageTest -->
+      </class> <!-- testMethod.DataProviderNoClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
